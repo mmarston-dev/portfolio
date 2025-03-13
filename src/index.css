@@ -4,4 +4,7 @@
   --color-primary: #23e289;
   --color-secondary: #23e289;
   --color-bg-dark: #0d1116;
+
+  --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --font-code: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
