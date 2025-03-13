@@ -1,4 +1,15 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faX } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+
 function Navigation() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   const handleScrollTo = (ref: string) => {
     const section = document.getElementById(ref);
     if (section) {
@@ -10,20 +21,40 @@ function Navigation() {
     }
   };
 
-  return (
-    <header className="flex justify-end sticky top-0 bg-(--color-bg-dark) text-white text-lg shadow-[0_4px_5px_rgba(0,0,0,0.5)] z-1">
-      <nav className="px-8 py-4">
-        <button className="px-3 rounded-full" onClick={() => handleScrollTo("expertise")}>
+  const NavLinks = () => {
+    return (
+      <>
+        <button className="p-3" onClick={() => handleScrollTo("expertise")}>
           Expertise
         </button>
-        <button className="px-3 rounded-full" onClick={() => handleScrollTo("history")}>
+        <button className="p-3" onClick={() => handleScrollTo("history")}>
           History
         </button>
-        <button className="px-3 rounded-full" onClick={() => handleScrollTo("contact")}>
+        <button className="p-3" onClick={() => handleScrollTo("contact")}>
           Contact
         </button>
+      </>
+    );
+  };
+
+  return (
+    <>
+      <nav className="flex justify-end w-1/3 px-5">
+        <div className="hidden md:flex justify-between">
+          <NavLinks />
+        </div>
+        <div className="md:hidden">
+          <button onClick={toggleNavbar} className="m-auto">
+            {isOpen ? <FontAwesomeIcon icon={faX} size="2x" className="hover:text-primary!" /> : <FontAwesomeIcon icon={faBars} size="2x" className="hover:text-primary!" />}
+          </button>
+        </div>
       </nav>
-    </header>
+      {isOpen && (
+        <div className="flex flex-col items-center basis-full">
+          <NavLinks />
+        </div>
+      )}
+    </>
   );
 }
 

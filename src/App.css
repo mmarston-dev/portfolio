@@ -19,7 +19,7 @@ a:hover {
 }
 
 button:hover {
-  background-color: #23e289;
+  color: #23e289;
   transition:
     color 0.2s ease-in-out,
     background-color 0.2s ease-in-out,
