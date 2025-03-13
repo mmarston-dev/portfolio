@@ -1,4 +1,4 @@
-import About from "./About";
+import Expertise from "./Expertise";
 import Contact from "./Contact";
 import Hero from "./Hero";
 import History from "./History";
@@ -7,7 +7,7 @@ function Main() {
   return (
     <main>
       <Hero />
-      <About />
+      <Expertise />
       <History />
       <Contact />
     </main>

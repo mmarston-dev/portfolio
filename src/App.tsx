@@ -1,5 +1,5 @@
 import "./App.css";
-import About from "./components/About";
+import Expertise from "./components/Expertise";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -11,7 +11,7 @@ function App() {
     <>
       <Navigation />
       <Hero />
-      <About />
+      <Expertise />
       <History />
       <Contact />
       <Footer />
