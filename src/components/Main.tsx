@@ -5,7 +5,7 @@ import History from "./History";
 
 function Main() {
   return (
-    <main>
+    <main className="bg-(--color-bg-dark) text-white">
       <Hero />
       <Expertise />
       <History />

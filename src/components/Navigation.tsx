@@ -4,17 +4,17 @@ function Navigation() {
     if (section) {
       section.scrollIntoView({
         behavior: "smooth",
-        block: "nearest",
+        block: "start",
         inline: "center",
       });
     }
   };
 
   return (
-    <header className="flex justify-end sticky top-0 bg-(--color-bg-dark) text-white text-lg shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+    <header className="flex justify-end sticky top-0 bg-(--color-bg-dark) text-white text-lg shadow-[0_4px_5px_rgba(0,0,0,0.5)]">
       <nav className="px-8 py-4">
-        <button className="px-3" onClick={() => handleScrollTo("about")}>
-          About
+        <button className="px-3" onClick={() => handleScrollTo("expertise")}>
+          Expertise
         </button>
         <button className="px-3" onClick={() => handleScrollTo("history")}>
           History

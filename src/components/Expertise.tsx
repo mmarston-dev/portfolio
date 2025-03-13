@@ -10,7 +10,7 @@ function Expertise() {
   const labelsThird = ["AWS Lambda", "AWS API Gateway", "AWS CloudFormation", "AWS CloudWatch", "AWS IAM", "AWS S3", "AWS Route 53", "git"];
 
   return (
-    <div id="about" className="flex flex-start items-center w-full px-[10%] py-48 bg-(--color-bg-dark) text-white shadow-[0_-4px_10px_rgba(0,0,0,0.5)]">
+    <div id="expertise" className="flex flex-start items-center w-full px-[10%] pt-48 shadow-[0_-4px_5px_rgba(0,0,0,0.5)]">
       <div className="flex flex-col">
         <h1 className="text-4xl font-bold mb-10">Expertise</h1>
         <div className="skills-grid grid grid-cols-3 gap-12">
