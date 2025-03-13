@@ -1,7 +1,6 @@
 import "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faMicrosoft, faAws } from "@fortawesome/free-brands-svg-icons";
-import Chip from "@mui/material/Chip";
 import TechStack from "./TechStack";
 
 function Expertise() {

@@ -17,3 +17,12 @@ a:hover {
     background-color 0.2s ease-in-out,
     border-color 0.2s ease-in-out;
 }
+
+button:hover {
+  background-color: #23e289;
+  transition:
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  cursor: pointer;
+}

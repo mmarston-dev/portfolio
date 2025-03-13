@@ -12,10 +12,10 @@ function Hero() {
       <div className="ml-6">
         <div className="flex gap-3 mb-5">
           <a href="https://github.com/mmarston-dev" target="_blank" rel="noreferrer">
-            <GitHubIcon />
+            <GitHubIcon className="!text-4xl" />
           </a>
           <a href="https://www.linkedin.com/in/matt-j-marston/" target="_blank" rel="noreferrer">
-            <LinkedInIcon />{" "}
+            <LinkedInIcon className="!text-4xl" />{" "}
           </a>
         </div>
         <h1 className="text-8xl font-bold mb-5">Matt Marston</h1>
