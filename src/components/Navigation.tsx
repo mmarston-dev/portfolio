@@ -11,7 +11,7 @@ function Navigation() {
   };
 
   return (
-    <header className="flex justify-end sticky top-0 bg-(--color-bg-dark) text-white text-lg shadow-[0_4px_5px_rgba(0,0,0,0.5)]">
+    <header className="flex justify-end sticky top-0 bg-(--color-bg-dark) text-white text-lg shadow-[0_4px_5px_rgba(0,0,0,0.5)] z-1">
       <nav className="px-8 py-4">
         <button className="px-3 rounded-full" onClick={() => handleScrollTo("expertise")}>
           Expertise
