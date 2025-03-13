@@ -5,7 +5,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Hero() {
   return (
-    <div className="flex flex-start items-center w-full min-h-[80vh] px-[15%] bg-cover bg-center bg-fixed" style={{ backgroundImage: `url(${bgDark})` }}>
+    <div
+      className="flex flex-col md:flex-row justify-center gap-10 items-center w-full min-h-[80vh] px-[15%] bg-cover bg-center bg-fixed"
+      style={{ backgroundImage: `url(${bgDark})` }}
+    >
       <div className="min-w-[150px]">
         <img src={headshot} className="w-[150px] rounded-full" />
       </div>
@@ -18,7 +21,7 @@ function Hero() {
             <LinkedInIcon className="!text-4xl" />{" "}
           </a>
         </div>
-        <h1 className="text-8xl font-bold mb-5">Matt Marston</h1>
+        <h1 className="text-5xl md:text-8xl font-bold mb-5">Matt Marston</h1>
         <p className="text-3xl ml-1">Full Stack Engineer</p>
       </div>
     </div>

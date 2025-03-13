@@ -12,8 +12,9 @@ function Expertise() {
     <div id="expertise" className="flex flex-start items-center w-full px-[10%] pt-48 shadow-[0_-4px_5px_rgba(0,0,0,0.5)]">
       <div className="flex flex-col">
         <h1 className="text-4xl font-bold mb-10">Expertise</h1>
-        <div className="skills-grid grid grid-cols-3 gap-12">
-          <div className="skill">
+        {/* <div className="skills-grid grid grid-cols-3 gap-12 grid-flow-col"> */}
+        <div className="flex flex-wrap lg:flex-nowrap gap-10">
+          <div className="skill basis-full">
             <FontAwesomeIcon icon={faReact} size="3x" />
             <h3 className="my-5 text-xl font-bold">User Interfaces</h3>
             <p>
@@ -23,7 +24,7 @@ function Expertise() {
             <TechStack labels={labelsFirst} />
           </div>
 
-          <div className="skill">
+          <div className="skill basis-full">
             <FontAwesomeIcon icon={faMicrosoft} size="3x" />
             <h3 className="my-5 text-xl font-bold">Web Applications & Data</h3>
             <p>
@@ -33,7 +34,7 @@ function Expertise() {
             <TechStack labels={labelsSecond} />
           </div>
 
-          <div className="skill">
+          <div className="skill basis-full">
             <FontAwesomeIcon icon={faAws} size="3x" />
             <h3 className="my-5 text-xl font-bold">Deployment & Utilities</h3>
             <p>
